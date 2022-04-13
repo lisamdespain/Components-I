@@ -104,8 +104,6 @@ const data = [
   //   <span class="expandButton">+</span>
   // </div>
   function articleMaker(array){
-const articleDivMain = document.createElement('div');
-articleDivMain.classList.add('articles');
 const articleDiv = document.createElement('div');
 articleDiv.classList.add('article','close');
 const articleHeader = document.createElement('h2');
@@ -138,7 +136,7 @@ expandButton.addEventListener('click', () => {
     }
   })
   
-return articleDivMain;
+return articleDiv;
   }
 
   data.forEach(article => {
